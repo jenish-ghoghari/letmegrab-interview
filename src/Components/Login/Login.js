@@ -41,7 +41,7 @@ const Login = () => {
   };
   return (
     <StyledLoginContainer>
-      <Col className="col-3">
+      <Col className="col-lg-3 col-md-6 col-sm-12 col-12">
         <StyledForm onSubmit={handleSubmit(onSubmit)}>
           <StyledLoginTitle>Sign In</StyledLoginTitle>
           <Form.Group className="mb-3">
