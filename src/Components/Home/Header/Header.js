@@ -27,7 +27,7 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto align-item-center">
             
-            {isLogin?.isLogin === true ?
+            {isLogin?.isLogin === true ? (
               <>
               {headerLinks.map((data) => (
                 <Nav.Link href={data.link}>{data.name}</Nav.Link>
