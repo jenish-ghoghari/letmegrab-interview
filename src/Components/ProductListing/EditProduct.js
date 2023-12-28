@@ -25,7 +25,7 @@ const EditProduct = () => {
       );
 
       if (response.data) {
-        toast.error("Product Updated Successfully!", {
+        toast.success("Product Updated Successfully!", {
           position: toast.POSITION.TOP_RIGHT,
         });
         navigate("/product-list");
