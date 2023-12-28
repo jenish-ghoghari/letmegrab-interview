@@ -20,7 +20,7 @@ const Header = () => {
       className="bg-body-tertiary d-flex justify-content-end"
     >
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img src={Logo} alt="site-logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
