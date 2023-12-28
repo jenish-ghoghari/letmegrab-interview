@@ -24,6 +24,7 @@ function App() {
             <Route path="/edit-product/:productId" element={<EditProduct />} />
           </>
         )}
+          <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
   );
