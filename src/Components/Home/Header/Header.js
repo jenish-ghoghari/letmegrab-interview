@@ -26,13 +26,16 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto align-item-center">
-            {headerLinks.map((data) => (
-              <Nav.Link href={data.link}>{data.name}</Nav.Link>
-            ))}
-            {isLogin?.isLogin === true ? (
+            
+            {isLogin?.isLogin === true ?
+              <>
+              {headerLinks.map((data) => (
+                <Nav.Link href={data.link}>{data.name}</Nav.Link>
+               ))}
               <Nav.Link>
                 <StyledButton onClick={handleLogout}>Logout</StyledButton>
               </Nav.Link>
+                 </>
             ) : (
               <Nav.Link c href="/login">Login</Nav.Link>
             )}
