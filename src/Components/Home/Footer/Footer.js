@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <Container style={{ margin: "70px auto 0" }}>
-      <Row className="mb-5 justify-content-between">
-        <Col className="col-3">
+      <Row className="p-2 mb-5 justify-content-between">
+        <Col className="col-lg-3 col-md-4 col-6">
           <img src={Logo} alt="site-logo" className="mb-4" />
 
           <StyledFooterText>
@@ -18,7 +18,7 @@ const Footer = () => {
           </StyledFooterText>
         </Col>
 
-        <Col className="col-3">
+        <Col className="col-lg-3 col-md-4 col-6">
           <StyledFooterContentTitle className="mb-3">QUICK LINKS</StyledFooterContentTitle>
 
             <FooterLinks >
