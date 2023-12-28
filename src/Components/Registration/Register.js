@@ -31,7 +31,7 @@ const Register = () => {
 
   return (
     <StyledRegisterContainer>
-      <Col className="col-3">
+      <Col className="col-lg-3 col-md-6 col-sm-12 col-12">
         <StyledForm onSubmit={handleSubmit(onSubmit)}>
           <StyledRegisterTitle>Sign Up</StyledRegisterTitle>
           <Form.Group className="mb-3">
