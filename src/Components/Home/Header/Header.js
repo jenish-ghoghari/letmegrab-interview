@@ -35,11 +35,12 @@ const Header = () => {
               <Nav.Link>
                 <StyledButton onClick={handleLogout}>Logout</StyledButton>
               </Nav.Link>
-                 </>
+              <Nav.Link className="fw-bold">{isLogin?.name}</Nav.Link>
+
+             </>
             ) : (
               <Nav.Link c href="/login">Login</Nav.Link>
             )}
-            <Nav.Link className="fw-bold">{isLogin?.name}</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
